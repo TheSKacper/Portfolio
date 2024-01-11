@@ -1,210 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/2a6f81a579.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2a6f81a579.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <title>Kacper Szweda - Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <p class="logo">Kacper Szweda</p>
-                <ul id="sideMenu">
-                    <li><a  href="#header">Home</a></li>
-                    <li><a  href="#about">About</a></li>
-                    <li><a  href="#services">Services</a></li>
-                    <li><a  href="#portfolio">Portfolio</a></li>
-                    <li><a  href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Junior Frontend Developer</p>
-                <h1>Kacper Szweda</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <p class="logo">Kacper Szweda</p>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Junior Frontend Developer</p>
+          <h1>Kacper Szweda</h1>
         </div>
+      </div>
     </div>
 
     <!--- About ---->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/ME2.jpg" alt="Kacper Szweda">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Future Frontend Developer, with many knowledge 
-                        and more then one year experience, working in web technology and applications.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links"onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <div class="bars">
-                            <div class="bars-box">
-                                <h3>HTML</h3>
-                                <span>70%</span>
-                                <div class="light-bar"></div>
-                                <div class="percent-bar html-bar"></div>
-                            </div>
-                            <div class="bars-box">
-                                <h3>CSS</h3>
-                                <span>65%</span>
-                                <div class="light-bar"></div>
-                                <div class="percent-bar css-bar"></div>
-                            </div>
-                            <div class="bars-box">
-                                <h3>Angular</h3>
-                                <span>70%</span>
-                                <div class="light-bar"></div>
-                                <div class="percent-bar angular-bar"></div>
-                            </div>
-                            <div class="bars-box">
-                                <h3>React</h3>
-                                <span>50%</span>
-                                <div class="light-bar"></div>
-                                <div class="percent-bar react-bar"></div>
-                            </div>
-                            <div class="bars-box">
-                                <h3>Node js</h3>
-                                <span>60%</span>
-                                <div class="light-bar"></div>
-                                <div class="percent-bar node-bar"></div>
-                            </div>
-                            <div class="bars-box">
-                                <h3>MongoDB</h3>
-                                <span>50%</span>
-                                <div class="light-bar"></div>
-                                <div class="percent-bar mongo-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023-02 - 2023-11</span> <br> QualityMinds Sp. z o.o.</li>
-                            <li><span>2022-07 - 2022-10</span> <br> Trainee at JSW IT SYSTEM</li>
-                            <li><span>2021-06 - 2021-10</span> <br> Trainee at Fight&Suply</li>
-                            <li><span>2020-06 - 2020-10</span> <br> Trainee at Fight&Suply</li>
-                            <li><span>2019-06 - 2019-10</span> <br> Trainee at HABAR</li>
-                            <li><span>2018-06 - 2018-10</span> <br> Trainee at HABAR </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022-Current</span> <br> Institute of Information Technologies in Katowice - Master degree</li>
-                            <li><span>2017-2022</span> <br> Institute of Information Technologies in Katowice - Engineer degree</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Me.jpeg" alt="Kacper Szweda" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a junior front-end developer with a passion for creating and
+              improving web applications using the Angular framework. I have an
+              engineering degree in software engineering at the University of
+              Information Technology in Katowice and I am currently pursuing a
+              master's degree in the same field. My core competencies include
+              Angular, React, TypeScript, HTML, CSS, JavaScript, NodeJS and SQL.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
-        </div>
-    </div>
+            <div class="tab-contents active-tab" id="skills">
+              <div class="bars">
+                <div class="bars-box">
+                  <h3>HTML</h3>
+                  <span>70%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="bars-box">
+                  <h3>CSS</h3>
+                  <span>65%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                  <h3>Angular</h3>
+                  <span>70%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar angular-bar"></div>
+                </div>
+                <div class="bars-box">
+                  <h3>React</h3>
+                  <span>50%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                  <h3>Node js</h3>
+                  <span>60%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar node-bar"></div>
+                </div>
+                <div class="bars-box">
+                  <h3>MongoDB</h3>
+                  <span>50%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar mongo-bar"></div>
+                </div>
+              </div>
+            </div>
 
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023-02 - 2023-11</span> <br />
+                  QualityMinds Sp. z o.o.
+                </li>
+                <li>
+                  <span>2022-07 - 2022-10</span> <br />
+                  Trainee at JSW IT SYSTEM
+                </li>
+                <li>
+                  <span>2021-06 - 2021-10</span> <br />
+                  Trainee at Fight&Suply
+                </li>
+                <li>
+                  <span>2020-06 - 2020-10</span> <br />
+                  Trainee at Fight&Suply
+                </li>
+                <li>
+                  <span>2019-06 - 2019-10</span> <br />
+                  Trainee at HABAR
+                </li>
+                <li>
+                  <span>2018-06 - 2018-10</span> <br />
+                  Trainee at HABAR
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-Current</span> <br />
+                  Institute of Information Technologies in Katowice - Master
+                  degree
+                </li>
+                <li>
+                  <span>2017-2022</span> <br />
+                  Institute of Information Technologies in Katowice - Engineer
+                  degree
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--- Services --->
 
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Create and design websites</p>
-                    <a href="https://github.com/TheSKacper?tab=repositories">See more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-server"></i>
-                    <h2>Backend Development</h2>
-                    <p>Create backend application</p>
-                    <a href="https://github.com/TheSKacper?tab=repositories">See more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-android"></i>
-                    <h2>App Development</h2>
-                    <p>Create full application frontend and backend</p>
-                    <a href="https://github.com/TheSKacper?tab=repositories">See more</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Create and design websites</p>
+            <a href="https://github.com/TheSKacper?tab=repositories"
+              >See more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend Development</h2>
+            <p>Create backend application</p>
+            <a href="https://github.com/TheSKacper?tab=repositories"
+              >See more</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-android"></i>
+            <h2>App Development</h2>
+            <p>Create full application frontend and backend</p>
+            <a href="https://github.com/TheSKacper?tab=repositories"
+              >See more</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!---- Portfolio -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/note.jpg" alt="Note">
-                    <div class="layer">
-                        <h3>Note application</h3>
-                        <p>Creating notebook connecting to database.</p>
-                        <a href="https://github.com/TheSKacper/Notebook"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/shop.jpg" alt="Shop">
-                    <div class="layer">
-                        <h3>Shop application</h3>
-                        <p>Creating grandparents website of shop.</p>
-                        <a href="https://github.com/TheSKacper/TJShop"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/hotel.jpg" alt="Hotel">
-                    <div class="layer">
-                        <h3>Hotel application</h3>
-                        <p>Creating website of hotel.</p>
-                        <a href="https://github.com/TheSKacper/KS-HOTEL"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/note.jpg" alt="Note" />
+            <div class="layer">
+              <h3>Note application</h3>
+              <p>Creating notebook connecting to database.</p>
+              <a href="https://github.com/TheSKacper/Notebook"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="https://github.com/TheSKacper?tab=repositories" class="btn">See more</a>
+          </div>
+          <div class="work">
+            <img src="images/shop.jpg" alt="Shop" />
+            <div class="layer">
+              <h3>Shop application</h3>
+              <p>Creating grandparents website of shop.</p>
+              <a href="https://github.com/TheSKacper/TJShop"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/hotel.jpg" alt="Hotel" />
+            <div class="layer">
+              <h3>Hotel application</h3>
+              <p>Creating website of hotel.</p>
+              <a href="https://github.com/TheSKacper/KS-HOTEL"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="https://github.com/TheSKacper?tab=repositories" class="btn"
+          >See more</a
+        >
+      </div>
     </div>
 
     <!--- Contact --->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> kacper.szweda@poczta.onet.eu</p>
-                    <p><i class="fa-solid fa-phone"></i> +48 600 251 355</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/kacper.szweda.1"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/kacper-szweda-a11a3724b/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/TheSKacper?tab=repositories"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/CV Kacper Szweda.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formsubmit.co/kacper.szweda@poczta.onet.eu" method="POST">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              kacper.szweda@poczta.onet.eu
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +48 600 251 355</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/kacper.szweda.1"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/kacper-szweda-a11a3724b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/TheSKacper?tab=repositories"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
+            <div >
+              <a href="images/CV Kacper Szweda.pdf" download class="btn btn3"
+                >Download CV</a
+              >
+              <a
+                href="images/Kacper Szweda referencje .pdf"
+                download
+                class="btn btn3"
+                >Download reference</a
+              >
+            </div>
+          </div>
+          <div class="contact-right">
+            <form
+              action="https://formsubmit.co/kacper.szweda@poczta.onet.eu"
+              method="POST"
+            >
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Kacper Szweda  </p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Kacper Szweda</p>
+      </div>
     </div>
 
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

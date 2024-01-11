@@ -458,6 +458,12 @@ nav ul li a:hover::after
     display: inline-block;
     background: red;
 }
+
+.btn.btn3
+{
+    width: 240px;
+    text-align: center;
+}
 .contact-right form 
 {
     width: 100%;
